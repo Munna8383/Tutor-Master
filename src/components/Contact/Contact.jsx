@@ -45,13 +45,13 @@ const Contact = () => {
   <AccordionItem value="item-3">
     <AccordionTrigger>How is security handled on the Tutor Media website?</AccordionTrigger>
     <AccordionContent>
-    Security is ensured through user authentication, with JWT implemented to safeguard user data and protect access to the platform's features.
+    Security is ensured through user authentication, with JWT implemented to safeguard user data and protect access to the platforms features.
     </AccordionContent>
   </AccordionItem>
   <AccordionItem value="item-4">
     <AccordionTrigger>How does the platform handle booking and scheduling?</AccordionTrigger>
     <AccordionContent>
-    The platform allows students to book lessons based on tutor availability. Tutors can set their schedules, and students can choose convenient times from the tutor's available slots.
+    The platform allows students to book lessons based on tutor availability. Tutors can set their schedules, and students can choose convenient times from the tutors available slots.
     </AccordionContent>
   </AccordionItem>
 </Accordion>

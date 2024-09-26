@@ -22,7 +22,7 @@ const TutionType = () => {
             <div className="p-2">
                 <h1 className="text-lg font-bold">Home Tutor</h1>
 
-                <p className="text-justify">We offer the best home tutoring services, delivering personalized, one-on-one education in the comfort of your home. Our experienced and dedicated tutors create tailored learning plans to meet each student's unique needs, ensuring academic improvement, confidence building, and long-term success. We help students excel and reach their full potential.</p>
+                <p className="text-justify">We offer the best home tutoring services, delivering personalized, one-on-one education in the comfort of your home. Our experienced and dedicated tutors create tailored learning plans to meet each students unique needs, ensuring academic improvement, confidence building, and long-term success. We help students excel and reach their full potential.</p>
             </div>
         </div>
 
@@ -36,7 +36,7 @@ const TutionType = () => {
             <div  className="p-2">
                 <h1 className="text-lg font-bold">Online Tutor</h1>
 
-                <p className="text-justify">We offer top-quality online tutoring services, combining flexibility with personalized learning. Our expert tutors deliver engaging, interactive lessons tailored to each student's unique needs, ensuring progress and academic success. With our online platform, students can learn from the comfort of home, benefiting from focused attention and convenient scheduling for optimal results.</p>
+                <p className="text-justify">We offer top-quality online tutoring services, combining flexibility with personalized learning. Our expert tutors deliver engaging, interactive lessons tailored to each students unique needs, ensuring progress and academic success. With our online platform, students can learn from the comfort of home, benefiting from focused attention and convenient scheduling for optimal results.</p>
             </div>
         </div>
 

@@ -1,4 +1,5 @@
 "use client"
+export const dynamic = "force-dynamic"
 import Banners from "@/components/Banners/Banners";
 import Contact from "@/components/Contact/Contact";
 import Featured from "@/components/Featured/Featured";
