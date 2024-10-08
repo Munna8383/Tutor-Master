@@ -52,7 +52,7 @@ const Feedback = () => {
 
 
     return (
-        <div className="mt-16 w-11/12 mx-auto">
+        <div className="mt-16 w-9/12 mx-auto dark:text-black">
             
 <div className="text-center">
 
@@ -64,7 +64,7 @@ const Feedback = () => {
 
          <Carousel
       plugins={[plugin2.current]}
-      className="w-full lg:w-1/2 shadow-xl shadow-gray-500 p-5"
+      className="w-full bg-white lg:w-1/2 shadow-sm shadow-gray-600 p-5"
       onMouseEnter={plugin2.current.stop}
       onMouseLeave={plugin2.current.reset}
     >
@@ -72,7 +72,7 @@ const Feedback = () => {
         {feedbacks.slice(0,2).map((item, index) => (
           <CarouselItem key={index}>
            <div className="p-5 space-y-5 text-center">
-            <Image className="size-32 rounded-full mx-auto" width={200} height={200} src={`${item.picture}`}></Image>
+            <Image className="size-32 rounded-full mx-auto" width={200} alt="image" height={200} src={`${item.picture}`}></Image>
                  <h1 className="text-lg font-semibold">{item.name}</h1>
                  <p>{item.message}</p>
             </div>
@@ -85,7 +85,7 @@ const Feedback = () => {
 
     <Carousel
       plugins={[plugin.current]}
-      className="w-full lg:w-1/2 shadow-xl shadow-slate-500 p-5"
+      className="w-full bg-white lg:w-1/2 shadow-sm shadow-gray-600 p-5"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
@@ -93,7 +93,7 @@ const Feedback = () => {
         {feedbacks.slice(2,4).map((item, index) => (
           <CarouselItem key={index}>
            <div className="p-5 space-y-5 text-center">
-            <Image className="size-32 rounded-full mx-auto" width={200} height={200} src={`${item.picture}`}></Image>
+            <Image className="size-32 rounded-full mx-auto" width={200} alt="image" height={200} src={`${item.picture}`}></Image>
                  <h1 className="text-lg font-semibold">{item.name}</h1>
                  <p>{item.message}</p>
             </div>

@@ -2,6 +2,12 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import AuthProvider from "@/services/AuthProvider";
+import { Toaster } from "@/components/ui/toaster"
+import NextTopLoader from 'nextjs-toploader';
+import ClientProvider from "@/queryProvider/page";
+
+
 
 
 const geistSans = localFont({
@@ -24,11 +30,25 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-7xl w-full mx-auto bg-gradient-to-r from-[#F5F5F5] to-[#E0E0E0]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-[1500px] w-full text-[#424242] mx-auto bg-[#F5F5F5]`}
       >
+        <AuthProvider>
+        <Toaster />
+        <NextTopLoader template='<div class="bar" role="bar"><div class="peg"></div></div>' speed={500} height={4}/>
+
+        <ClientProvider>
+
         <Navbar></Navbar>
         {children}
         <Footer/>
+
+
+        </ClientProvider>
+
+        
+
+        </AuthProvider>
+      
       </body>
     </html>
   );

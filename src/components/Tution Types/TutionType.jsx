@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const TutionType = () => {
     return (
-        <div className="mt-16 w-11/12 mx-auto">
+        <div className="mt-16 w-11/12 mx-auto dark:text-black">
 
 <div className="text-center">
 
@@ -15,7 +15,7 @@ const TutionType = () => {
         <div data-aos="zoom-in" className="shadow-md shadow-slate-800 text-center">
             <div>
 
-                <Image className="w-full" src={"/home.png"} width={300} height={270}/>
+                <Image alt="image" className="w-full" src={"https://i.ibb.co.com/MMG3wF4/home.png"} width={300} height={270}/>
 
             </div>
 
@@ -29,7 +29,7 @@ const TutionType = () => {
         <div data-aos="zoom-in" className="shadow-md shadow-slate-800 text-center">
             <div>
 
-                <Image className="w-full" src={"/online.png"} width={300} height={270}/>
+                <Image className="w-full" alt="image" src={"https://i.imghippo.com/files/E4ZI11728395214.png"} width={300} height={270}/>
 
             </div>
 
@@ -43,7 +43,7 @@ const TutionType = () => {
         <div data-aos="zoom-in" className="shadow-md shadow-slate-800 text-center">
             <div>
 
-                <Image className="w-full" src={"/group.png"} width={300} height={270}/>
+                <Image className="w-full" alt="image" src={"https://www.imghippo.com/i/ttFXo1728395253.png"} width={300} height={270}/>
 
             </div>
 

@@ -41,14 +41,14 @@ const Featured = () => {
 
 <div className="text-center">
 
-<h1 className="text-3xl font-bold">Featured Teacher</h1>
+<h1 className="text-3xl font-bold dark:text-black">Featured Teacher</h1>
 </div>
 
 
 <div  className="mt-5 grid grid-cols-1 gap-5 lg:grid-cols-3 ">
 
   {
-    teachers.map((item,index)=><div data-aos="flip-up" data-aos-delay="700" data-aos-duration="600" className="p-3 bg-white space-y-2 border-2 border-orange-500" key={index}>
+    teachers.map((item,index)=><div data-aos="flip-up" data-aos-delay="500" data-aos-duration="600" className="p-3 bg-white dark:text-black space-y-2 border-2 border-[#E0E0E0]" key={index}>
 
       <Image width={400} height={300} alt="teacher" src={`${item.image}`}/>
       <h1 className="text-sm font-bold">Name: <span className="text-sm font-normal">{item.name}</span></h1>

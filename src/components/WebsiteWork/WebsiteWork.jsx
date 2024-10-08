@@ -2,7 +2,7 @@
 
 const WebsiteWork = () => {
     return (
-     <div className="w-11/12 mx-auto mt-16">
+     <div className="w-11/12 mx-auto mt-16 dark:text-black">
              <div className="text-center">
 
 <h1 className="text-3xl font-bold">How our Website Works</h1>
@@ -10,7 +10,7 @@ const WebsiteWork = () => {
 <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-7 mt-10">
         {/* Step 1 */}
         <div className="flex flex-1 flex-col items-center text-center p-6 bg-white shadow-lg rounded-lg animate-slow-bounce">
-          <div className="bg-orange-100 p-3 rounded-full">
+          <div className="bg-blue-200 p-3 rounded-full">
             {/* Icon for "Create Profile" */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -28,14 +28,14 @@ const WebsiteWork = () => {
             </svg>
           </div>
           <h3 className="mt-4 text-xl font-semibold">Register Profile</h3>
-          <p className="mt-2 text-gray-600">
+          <p className="mt-2 text-gray-600 dark:text-black">
             Create your profile in minutes with sign up information.
           </p>
         </div>
 
         {/* Step 2 */}
         <div className="flex flex-1 flex-col items-center text-center p-6 bg-white shadow-lg rounded-lg animate-slow-bounce2">
-          <div className="bg-orange-100 p-3 rounded-full">
+          <div className="bg-blue-200 p-3 rounded-full">
             {/* Icon for "Complete Profile" */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -53,14 +53,14 @@ const WebsiteWork = () => {
             </svg>
           </div>
           <h3 className="mt-4 text-xl font-semibold">Become Teacher</h3>
-          <p className="mt-2 text-gray-600">
-            Provide necessary Information To become Teacher
+          <p className="mt-2 text-gray-600 dark:text-black">
+            Provide necessary Information and To become Teacher
           </p>
         </div>
 
         {/* Step 3 */}
         <div className="flex flex-1 flex-col items-center text-center p-6 bg-white shadow-lg rounded-lg animate-slow-bounce">
-          <div className="bg-orange-100 p-3 rounded-full">
+          <div className="bg-blue-200 p-3 rounded-full">
             {/* Icon for "Apply for Tuition Job" */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -78,8 +78,8 @@ const WebsiteWork = () => {
             </svg>
           </div>
           <h3 className="mt-4 text-xl font-semibold">Apply for Tuition Job</h3>
-          <p className="mt-2 text-gray-600">
-            After Providing information submit it.
+          <p className="mt-2 text-gray-600 dark:text-black">
+            After Providing necessary information and data submit it.
           </p>
         </div>
       </div>

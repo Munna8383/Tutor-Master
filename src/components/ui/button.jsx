@@ -11,7 +11,7 @@ const buttonVariants = cva(
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
         destructive:
-          "bg-destructive font-semibold text-destructive-foreground hover:bg-destructive/90",
+          "bg-[#6699CC] font-semibold text-white hover:bg-blue-500 hover:text-white transform transition duration-300 ease-in-out hover:scale-105",
         outline:
           "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary:
