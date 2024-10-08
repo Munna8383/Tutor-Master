@@ -43,7 +43,7 @@ const TutionType = () => {
         <div data-aos="zoom-in" className="shadow-md shadow-slate-800 text-center">
             <div>
 
-                <Image className="w-full" alt="image" src={"https://www.imghippo.com/i/ttFXo1728395253.png"} width={300} height={270}/>
+                <Image className="w-full" alt="image" src={"https://i.postimg.cc/43NBvLpZ/group.png"} width={300} height={270}/>
 
             </div>
 

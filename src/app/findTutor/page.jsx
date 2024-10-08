@@ -29,7 +29,7 @@ const page = () => {
   const { data, refetch, isLoading } = useQuery({
     queryKey: ["teacher"],
     queryFn: async () => {
-      const res = await axios.get("http://localhost:3000/becomeTutor/teacher/api")
+      const res = await axios.get("https://tutor-master-gules.vercel.app/becomeTutor/teacher/api")
 
       return res.data.result
     }
