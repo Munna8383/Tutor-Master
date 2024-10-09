@@ -92,7 +92,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Icon at the End */}
         <div className="md:hidden ml-auto text-2xl" onClick={() => setToggle(!toggle)}>
-          {toggle ? <MdCancel /> : <TiThMenu />}
+          {toggle ? <MdCancel className="text-xl" /> : <TiThMenu className="text-xl" />}
         </div>
       </div>
     </div>

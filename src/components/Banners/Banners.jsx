@@ -7,7 +7,7 @@ const Banners = () => {
     return (
         <div className="">
 
-            <div className="bg-[url('https://i.imghippo.com/files/Tb8k61727376165.jpg')] bg-cover bg-fixed bg-center h-screen rounded-b-[450px] ">
+            <div className="bg-[url('https://i.postimg.cc/BQHDHztb/Firefly-Teacher-with-students-5253.jpg')] bg-cover bg-fixed bg-center h-screen rounded-b-[450px] ">
 
                 <div className="h-screen flex justify-center items-center bg-[rgba(0,0,0,0.6)] rounded-b-[450px]">
 
