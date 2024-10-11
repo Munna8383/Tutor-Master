@@ -16,7 +16,7 @@ import { Button } from "../ui/button";
 
 const Contact = () => {
     return (
-        <div className="mt-16 dark:text-black ">
+        <div data-aos="zoom-in"  className="mt-16 dark:text-black ">
 
 <div className="text-center">
 

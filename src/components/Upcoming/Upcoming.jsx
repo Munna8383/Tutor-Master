@@ -16,8 +16,8 @@ const Upcoming = () => {
 
 <div className="flex flex-col lg:flex-row items-center lg:items-stretch mt-5">
 
-  <div className="w-full bg-slate-800 p-3 rounded-l-lg lg:w-1/2 flex flex-col justify-center">
-    <div className="space-y-10 text-center">
+  <div className="w-full bg-slate-800 p-3 lg:rounded-l-lg lg:w-1/2 flex flex-col justify-center">
+    <div className="space-y-7 text-center">
       <h1 className="text-2xl font-bold text-white">The Wait is Over</h1>
       <h1 className="text-2xl font-bold text-white">Our Mobile Version Is Coming!</h1>
       <h1 className="text-2xl font-bold text-white">Available In</h1>
@@ -35,8 +35,8 @@ const Upcoming = () => {
     </div>
   </div>
 
-  <div className="w-full lg:w-1/2 rounded-r-lg flex justify-center">
-    <Image className=" w-full rounded-r-lg" height={200} width={300} alt="mobile" src="/mobile.jpeg" />
+  <div className="w-full lg:w-1/2 lg:rounded-r-lg flex justify-center">
+    <Image className=" w-full rounded-r-lg" height={170} width={280} alt="mobile" src="/mobile.jpeg" />
   </div>
 
 </div>

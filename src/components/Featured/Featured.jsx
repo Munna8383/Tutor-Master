@@ -50,7 +50,7 @@ const Featured = () => {
   {
     teachers.map((item,index)=><div data-aos="flip-up" data-aos-delay="500" data-aos-duration="600" className="p-3 bg-white dark:text-black space-y-2 border-2 border-[#E0E0E0]" key={index}>
 
-      <Image width={400} height={300} alt="teacher" src={`${item.image}`}/>
+      <Image className="w-full" width={400} height={300} alt="teacher" src={`${item.image}`}/>
       <h1 className="text-sm font-bold">Name: <span className="text-sm font-normal">{item.name}</span></h1>
       <h1 className="text-sm font-bold">University: <span className="text-sm font-normal">{item.university}</span></h1>
       <h1 className="text-sm font-bold">Location: <span className="text-sm font-normal">{item.location}</span></h1>

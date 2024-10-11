@@ -31,7 +31,7 @@ const page = () => {
       queryKey:["list",session?.data?.user?.email],
       enabled:!isLoading,
       queryFn:async()=>{
-          const res = await axios.get(`https://tutor-master-gules.vercel.app/profile/${session?.data?.user?.email}`)
+          const res = await axios.get(`http://localhost:3000/profile/${session?.data?.user?.email}`)
 
           return res.data
       }

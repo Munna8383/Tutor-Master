@@ -16,7 +16,7 @@ import useRole from "@/app/singleUser/page";
 
 
 const Navbar = () => {
-    const [toggle,setToggle]=useState(true)
+    const [toggle,setToggle]=useState(false)
     const pathname = usePathname()
     const session = useSession()
     const router = useRouter()
@@ -68,7 +68,7 @@ const Navbar = () => {
       {/* Auth and Mobile Menu */}
       <div className="flex items-center gap-2 font-semibold sm:gap-7">
         {status === "loading" ? (
-          <div className="flex gap-2">
+          <div className=" hidden md:block md:flex  gap-2">
             <Button size="sm" variant="destructive">
               <ReloadIcon className="mr-2 h-4 w-4 animate-spin" />
               <FaRegSadCry className="text-black" />
@@ -92,7 +92,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Icon at the End */}
         <div className="md:hidden ml-auto text-2xl" onClick={() => setToggle(!toggle)}>
-          {toggle ? <MdCancel className="text-xl" /> : <TiThMenu className="text-xl" />}
+          {toggle ? <MdCancel className="text-3xl" /> : <TiThMenu className="text-3xl" />}
         </div>
       </div>
     </div>
