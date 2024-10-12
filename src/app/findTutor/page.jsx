@@ -22,7 +22,7 @@ import { useToast } from "@/hooks/use-toast";
 
 
 
-const page = () => {
+const page = async() => {
 
   const { toast } = useToast()
 
@@ -42,32 +42,43 @@ const page = () => {
 
     const form = e.target;
 
-    const name = form.name.value
-    const phone = form.phone.value
-    const location = form.location.value
-    const teacherEmail = email
-    const id = single
-    const status = "pending"
-    const studentEmail = form.email.value
+  const name = form.name.value
+  const phone = form.phone.value
+  const location = form.location.value
+  const teacherEmail = email
+  const id = single
+  const status = "pending"
+  const studentEmail = form.email.value
 
 
 
-    const info = { name, phone, location, studentEmail, teacherEmail, id ,status}
-
-    const result = await axios.post("https://tutor-master-gules.vercel.app/request/api", info)
+  const info = { name, phone, location, studentEmail, teacherEmail, id ,status}
 
 
-    if (result.data.message) {
-      toast({
-        description: "Requested.",
-      });
-      e.target.reset();
-    } else {
-      toast({
-        description: "Something Wrong.",
-        variant: "destructive",
-      });
-    }
+   try{
+    const result = await axios.post("https://tutor-master-gules.vercel.app/findTutor/request/api", info)
+
+      if (result.data.message) {
+    toast({
+      description: "Requested.",
+    });
+    e.target.reset();
+  } else {
+    toast({
+      description: "Something Wrong.",
+      variant: "destructive",
+    });
+  }
+   }catch(err){
+    toast({
+      description: "Something Wrong.",
+      variant: "destructive",
+    });
+    
+   }
+
+
+
 
 
 
