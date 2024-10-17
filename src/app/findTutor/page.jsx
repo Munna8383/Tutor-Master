@@ -36,6 +36,9 @@ const page = async() => {
   })
 
 
+  console.log(data)
+
+
   const handleRequest = async (e, email, single) => {
 
     e.preventDefault()

@@ -52,10 +52,13 @@ const Navbar = () => {
 <div className="fixed w-full max-w-[1500px] mx-auto z-50">
   <div className="w-full">
     <div className="bg-[#001F3F] flex justify-between items-center px-3 sm:px-10 py-5 text-white">
-      <div className="flex gap-2 items-center">
-        <Image alt="logo" src={"/teacher2.png"} height={50} width={50} />
+     <Link href={"/"}>
+    <div  className="flex gap-2 items-center">
+    <Image alt="logo" src={"/teacher2.png"} height={50} width={50} />
         <h1 className="text-lg sm:text-2xl font-bold">Tutor<span className="text-[#6699CC]">Master</span></h1>
-      </div>
+    </div>
+     </Link>
+   
 
       {/* Desktop Links */}
       <div className="hidden md:flex items-center gap-7">
@@ -99,20 +102,21 @@ const Navbar = () => {
 
     {/* Mobile Dropdown Menu */}
     {toggle && (
-      <div className="bg-white absolute top-[100px] right-2 z-10 text-black divide-y-2 md:hidden px-14 py-2 w-[250px] rounded shadow-lg">
-        <Link className="block py-2" href={"/"}>Home</Link>
-        <Link className="block py-2" href={"/findTutor"}>Find Teacher</Link>
-        <Link className="block py-2" href={"/becomeTutor"}>Become Teacher</Link>
-        {person?.role === "teacher" && <Link className="block py-2" href={"/profile"}>My Profile</Link>}
-        {!session.data ? (
-          <>
-            <Link className="block py-2" href={"/login"}>Login</Link>
-            <Link className="block py-2" href={"/register"}>Register</Link>
-          </>
-        ) : (
-          <Button className="w-full py-2 mt-2" onClick={handleLogout} size="sm" variant="destructive">Logout</Button>
-        )}
-      </div>
+    <div data-aos="zoom-in" className="bg-white absolute top-[90px]  transform translate-x-1/2 left-8 w-[300px] mx-auto z-10 text-black divide-y-2 md:hidden px-5 py-2 rounded shadow-lg">
+    <Link className="block py-2" href={"/"}>Home</Link>
+    <Link className="block py-2" href={"/findTutor"}>Find Teacher</Link>
+    <Link className="block py-2" href={"/becomeTutor"}>Become Teacher</Link>
+    {person?.role === "teacher" && <Link className="block py-2" href={"/profile"}>My Profile</Link>}
+    {!session.data ? (
+      <>
+        <Link className="block py-2" href={"/login"}>Login</Link>
+        <Link className="block py-2" href={"/register"}>Register</Link>
+      </>
+    ) : (
+      <Button className="w-full py-2 mt-2" onClick={handleLogout} size="sm" variant="destructive">Logout</Button>
+    )}
+  </div>
+  
     )}
   </div>
 </div>
