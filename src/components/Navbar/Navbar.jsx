@@ -49,7 +49,7 @@ const Navbar = () => {
 
     return (
            
-<div className="fixed w-full max-w-[1500px] mx-auto z-50">
+<div className="fixed w-full max-w-[2200px] mx-auto z-50">
   <div className="w-full">
     <div className="bg-[#001F3F] flex justify-between items-center px-3 sm:px-10 py-5 text-white">
      <Link href={"/"}>

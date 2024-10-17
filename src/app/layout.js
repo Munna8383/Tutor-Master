@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-[1500px] w-full text-[#424242] mx-auto bg-[#F5F5F5]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-[2200px] w-full text-[#424242] mx-auto bg-[#F5F5F5]`}
       >
         <AuthProvider>
         <Toaster />
