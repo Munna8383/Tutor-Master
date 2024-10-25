@@ -36,7 +36,7 @@ const Upcoming = () => {
   </div>
 
   <div className="w-full lg:w-1/2 lg:rounded-r-lg flex justify-center">
-    <Image className=" w-full rounded-r-lg" height={170} width={280} alt="mobile" src="/mobile.jpeg" />
+    <Image className=" w-full lg:rounded-r-lg" height={170} width={280} alt="mobile" src="/mobile.jpeg" />
   </div>
 
 </div>
